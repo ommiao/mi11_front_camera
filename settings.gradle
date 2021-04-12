@@ -1,0 +1,2 @@
+include ':app'
+rootProject.name = "mi11_front_camera"

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">mi11_front_camera</string>
+    <string name="accessibility_info">本服务提供的悬浮层可覆盖锁屏、通知栏等场景，请放心开启，本服务不监听任何用户操作。</string>
+    <string name="tips_open_accessibility_server">请打开无障碍服务后操作</string>
+</resources>

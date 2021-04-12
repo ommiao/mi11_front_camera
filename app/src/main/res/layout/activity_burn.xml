@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <RelativeLayout
+        android:layout_width="200dp"
+        android:layout_height="480dp"
+        android:layout_gravity="center"
+        android:background="@drawable/shape_bg_controller">
+
+        <View
+            android:id="@+id/center"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_centerInParent="true" />
+
+        <cn.ommiao.mi11_front_camera.widget.LongPressImageView
+            android:id="@+id/iv_up"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@id/center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_rect_up" />
+
+        <cn.ommiao.mi11_front_camera.widget.LongPressImageView
+            android:id="@+id/iv_down"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/center"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/ic_rect_down" />
+
+        <cn.ommiao.mi11_front_camera.widget.LongPressImageView
+            android:id="@+id/iv_left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toStartOf="@id/center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_rect_left" />
+
+        <cn.ommiao.mi11_front_camera.widget.LongPressImageView
+            android:id="@+id/iv_right"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toEndOf="@id/center"
+            android:layout_centerVertical="true"
+            android:src="@drawable/ic_rect_right" />
+
+        <ImageView
+            android:id="@+id/iv_swicher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="20dp"
+            android:src="@drawable/ic_switch"
+            android:tint="#000000" />
+
+        <SeekBar
+            android:id="@+id/seek_bar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_down"
+            android:progressDrawable="@drawable/seekbar"
+            android:thumb="@null"
+            android:max="100"
+            android:progress="50"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="30dp"
+            android:background="@null"
+            android:splitTrack="false"/>
+
+    </RelativeLayout>
+
+
+
+
+</FrameLayout>
